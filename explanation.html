@@ -1,124 +1,241 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Income Statement</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <!--EXPLANATION-->
+            <h1>Expenation</h1>
+            <section>
+                <!--INCOME STATEMENT-->
+                <h2 id="revenue">Revenue</h2>
+                    <p>
+                        The first line on the income statement is always total, or gross, revenue.<br>
+                        The fact that a company has a lot of revenue doesn't mean that it is earning a profit.<br>
+                        Total revenue minus expenses eaquals net earnings.
+                    </p>
 
-    <!--EXPLANATION-->
-    <h1>Expenation</h1>
-        <section>
-            <h2 id="revenue">Revenue</h2>
+                <h2 id="cost_of_goods_sold">Cost of Goods Sold</h2>
+                    <p>
+                        Also known as Cost of Revenue.<br>
+                        The cost of goods sold is either the cost of purchasing the goods a company is reselling or the cost 
+                        of purchasing the materials and labor used in manufacturing the product it is selling.<br>
+                        Cost of revenue is usually used if the company is in the business of providing services rather than products.
+                    </p>
+
+            <h2 id="gross_profit">Gross Profit</h2>
                 <p>
-                    The first line on the income statement is always total, or gross, revenue.<br>
-                    The fact that a company has a lot of revenue doesn't mean that it is earning a profit.<br>
-                    Total revenue minus expenses eaquals net earnings.
+                    Gross profit is how much money the company made off of total revenue after subtracting the costs of
+                    the raw goods and the labor used to make the goods.<br>
+                    It doesn't include such categories as sales and administrative costs, depreciation, 
+                    and the intersest cost of running the business.<br>                
                 </p>
 
-            <h2 id="cost_of_goods_sold">Cost of Goods Sold</h2>
+            <h2 id="operating_expenses">Operating Expenses</h2>
                 <p>
-                    Also known as Cost of Revenue.<br>
-                    The cost of goods sold is either the cost of purchasing the goods a company is reselling or the cost 
-                    of purchasing the materials and labor used in manufacturing the product it is selling.<br>
-                    Cost of revenue is usually used if the company is in the business of providing services rather than products.
+                    These are the company's hard costs associated with reseach and development of new products, <br>
+                    selling and administrative costs of getting the products to market, <br>
+                    depreciation and amortiszation, restructuring and impairment changes, <br>
+                    and the catch-all "other" that includes all non-operating, non-recurring expenses.
                 </p>
 
-        <h2 id="gross_profit">Gross Profit</h2>
-            <p>
-                Gross profit is how much money the company made off of total revenue after subtracting the costs of
-                the raw goods and the labor used to make the goods.<br>
-                It doesn't include such categories as sales and administrative costs, depreciation, 
-                and the intersest cost of running the business.<br>                
-            </p>
+            <h2 id="selling_general_admin">Selling, General, and Administrative Expenses (SGA)</h2>
+                <p>
+                    This is where the company reports its costs for direct and indirect selling expenses and all general and 
+                    administrative expenses.<br>
+                    These include manafment salaries, advertising, travel costs, legal fees, commissions, all payroll costs, and the like.<br>
+                    What happens is that sales start to fall, whick means revenues fall, but SGA costs remain. If the company can't cut SGA 
+                    costs fast enough, they start eating into more and mare of the company's grass profit.<br>
+                </p>
 
-        <h2 id="net_earnings">Net Earnings</h2>
-            <p>
-                net earnings/net income/bottom line<br>
-                Where we find out how much money the company has made after it paid income taxes.<br>
-                Are the net earnings showing an historical upward trend? A single years entry for net earnings is useless.<br>
-                The ride does not have to be smooth but there must be an upward historical trend.
-            </p>
-        </section>
+            <h2 id="reseach_and_development">Research and Development</h2>
+                <p>
+                    A lot off companies have a competitive advantage through a patent or some technological advantage.<br>
+                    There is always the threat that a newer technology will replace it. These companies spend large sums of money in R&D.
+                </p>
 
-        <section>
+            <h2 id="depreciation">Depreciation</h2>
+                <p>
+                    All machinery and buildings evenyually wear out over time; this wearing out is recognized on the income statement as 
+                    depreciation. Basically, the amount that something depreciates in a given year is a cost that is allocated against income 
+                    for that year.<br>
+                    An example: Imagine that a million-dollar printing press is bought by XYZ Printing Corporation. This printing press 
+                    has a life span of ten years. Because it has a life span of ten years, the IRS will not let the company expense 
+                    the entire $1 million cost in the year that it was purchased. Instead, the press must be expensed over the ten years 
+                    that it is in service. This means that XYZ will depreciate the printing press at a rate of $100,000 a year.<br>
+                    Depreciation is a real cost, because at some time in the future the printing press will have to be replaced.<br>
+                    The buying of the printing press will on the balance sheet cause $1 million to come out of cash and $1 million to be 
+                    added to plant and equipment.<br>
+                    Then for the next ten years, the depreciated cost of $100,000 a year will show up on the income statement as an expense. 
+                    On the balance sheet each year $100,000 will be subtracted from the plant and equipment assest account and $100,000 
+                    added to the accumulated depreciation liabilities account.<br>
+                    The actual $1 million cash out-lay for the printing press will show up on the cash flow statement under capital expenditures. 
+                </p>
+
+            <h2 id="operating_profit">Operating Profit</h2>
+                <p>
+                    Operating profit also known as Operating income<br>
+                    or Earnings before interest and tax (EBIT) How ever EBIT includes revenue made from non-operating activities where as Operating Profit does not.<br>
+                    <br>Operating profit = Gross Profit – Operating Expenses – Depreciation – Amortization<br>
+                    Operating profit serves as a highly accurate indicator of a business’s health because it removes all expenses that 
+                    are necessary to keep the business running from the calculation.
+                </p>
+
+            <h2 id="interest_expense">Interest Expense</h2>
+                <p>
+                    Interest Expense is the entry for the interest paid out, during the quarter of year, on the debt the company carries on its 
+                    balance sheet as a liability. This is a financial cost, not an operating cost, and it is isolated out on its own, because 
+                    it is not tied to any production or sales process. The more debt a company has the more interest it has to pay. <br>
+                </p>
+
+            <h2 id="sales_of_assets_other">Gain (or Loss) on Sales of Assets and Other</h2>
+                <p>
+                    When a company sells an asset (other than inventory), the profit or loss for the sale is recorded under Gain (or Loss) 
+                    on Sales of Assets. <br>
+                    An example: If the company had a building that it paid $1 million for, and after depreciating it down to $500,000, sold 
+                    it for $800,000, the company would record a gain of $300,000 on the sale of the asset. Likewise, if the building 
+                    sold for $400,000, the company would record a loss of $100,000.<br>
+                    The same thing applies to the entry "Other". This is where non-operating, unusual, and infrequent income and expense 
+                    events are netted out and entered onto the income statement. Such events would include the sale of fixed assets, 
+                    such as property, plant, and equipment.<br>
+                    Also under "Other" would be licensing agreements and the sale of patents, if they were categorized as outside the normal 
+                    course of business.
+                </p>
+
+            <h2 id="income_before_tax">Income before Taxes</h2>
+                <p>
+                    Income before tax is a company's income after all expeneses have been deducted, but before income tax has been 
+                    subtracted.
+                </p>
+
+            <h2 id="income_tax_paid">Income Tax Paid</h2>
+                <p>
+                    American corperations have to pay 35% of their income as taxes. One of the ways to see how much income a company is 
+                    making is to see at the documents they file with the SEC and see what they are paying in income taxes.<br>
+                    Take the number they list as pre-tax operating income and deduct 35% from it. If the remainder doesn't equal the 
+                    amount the company reported as income taxes paid, something is wrong. 
+                </p>
+
+                <h2 id="net_earnings">Net Earnings</h2>
+                <p>
+                    net earnings/net income/bottom line<br>
+                    Where we find out how much money the company has made after it paid income taxes.<br>
+                    Are the net earnings showing an historical upward trend? A single years entry for net earnings is useless.<br>
+                    The ride does not have to be smooth but there must be an upward historical trend.
+                </p>
+            
+            <!--BALANCE SHEET-->
+            <h2 id="assets">Assets & Cuttent Asser Cycle</h2>
+                <p>
+                    This is where all the goodies are kept: the cash, the plant and equipment, the patents, ...<br>
+                    The balance sheet are divided in two groups: Current Assets, and All Other Assets. Current Assets can be or will be 
+                    converted into cash in a very short period of time (usually within a year). As a rule, they are listed on the balance 
+                    sheet in order of their liquidity.<br>
+                    Current Assets are also known as quick, liquid, or floating assets.
+                </p>
+
+            <h3 id="working_assets">Current Asset Cycle</h3>
+                <p>
+                    Current assets are also referred to as the "working assets" of the business because they are in the cycle of cash going 
+                    buy inventory; Inventory is then sold to vendors and becomes Accounts Receivable. Accounts Receivable, when collected 
+                    from the vendors, they turn back into Cash. This cycle repeats itself over and over again, and it is how a business 
+                    makes money. 
+                </p>
+
+            <h2 id="cash">Cash and Cash equivalents</h2>
+                <p>
+                    
+                </p>
+
             <h2 id="retained_earnings">Retained Earnings</h2>
-            <p>
-                A company's net earnings can be paid out as dividends or used to buy back the company's shares, 
-                or it can be retained to keep the business growing.<br>
-                When they are retained in the business, they are added to an account on the balance sheet, under shareholders' equity 
-                called retained earnings.<br>
-                Retained earnings is an accumulated number, which means that each year's new retained earnings are added to the total 
-                of accumulated earnings from all prior years.<br>
-                If a company is not making additions to its retained earnings, it is not growing it's net earnings.
-            </p>
-    
-            <h2 id="total_shareholders_equity">Total Shareholders Equity</h2>
-            <p>
-                Shareholders' equity is equal to the company's total assets minus its total liabilities.<br>
-                That happens to equal the total sums of preferred and common stock, plus paid in capital, 
-                plus retained earnings, less treasury stock.<br>
-                Shareholders' equity has three sources. One is the capital that was originally raised selling preferred 
-                and common stock to the public.<br>
-                The second is any later sales of preferred and common stock to the public after the company is up and running.<br>
-                The third, and most important to us, is the accumulation of retained earnings.
-            </p>
-    
-            <h2 id="long_term_debt">Long Term Debt</h2>
-            <p>
-                Long term debt means debt that matures any time out past a year. On the balance sheet it comes under the heading of 
-                long term liablities.<br>
-            </p> 
-        </section>
-
-        <section>
-            <h2 id="capital_expenditures">Capital Expenditures</h2>
                 <p>
-                   Money spend by a business on acquiring or maintaining fixed assets, such as land, buildings, and equipment.<br>
-                   These are assets that are expensed over a period of time greater than a year through depreciation or amortiszation. 
+                    A company's net earnings can be paid out as dividends or used to buy back the company's shares, 
+                    or it can be retained to keep the business growing.<br>
+                    When they are retained in the business, they are added to an account on the balance sheet, under shareholders' equity 
+                    called retained earnings.<br>
+                    Retained earnings is an accumulated number, which means that each year's new retained earnings are added to the total 
+                    of accumulated earnings from all prior years.<br>
+                    If a company is not making additions to its retained earnings, it is not growing it's net earnings.
                 </p>
-                
-        </section>
 
-        <section>
-            <h2>Cash dividends paid and share buybacks</h2>
-            <p>
-                Issuance (Retirement) of Stock, Net = share buybacks<br>
-                When a company payes dividends to the shareholder. The shareholder must pay income tax on the dividends.<br>
-                It is more intresting for the company to buy back shares.
-            </p>
-        </section>
+            <h2 id="total_shareholders_equity">Total Shareholders Equity</h2>
+                <p>
+                    Shareholders' equity is equal to the company's total assets minus its total liabilities.<br>
+                    That happens to equal the total sums of preferred and common stock, plus paid in capital, 
+                    plus retained earnings, less treasury stock.<br>
+                    Shareholders' equity has three sources. One is the capital that was originally raised selling preferred 
+                    and common stock to the public.<br>
+                    The second is any later sales of preferred and common stock to the public after the company is up and running.<br>
+                    The third, and most important to us, is the accumulation of retained earnings.
+                </p>
 
+            <h2 id="long_term_debt">Long Term Debt</h2>
+                <p>
+                    Long term debt means debt that matures any time out past a year. On the balance sheet it comes under the heading of 
+                    long term liablities.<br>
+                </p> 
+            </section>
 
+            <section>
+                <h2 id="capital_expenditures">Capital Expenditures</h2>
+                    <p>
+                    Money spend by a business on acquiring or maintaining fixed assets, such as land, buildings, and equipment.<br>
+                    These are assets that are expensed over a period of time greater than a year through depreciation or amortiszation. 
+                    </p>
+                    
+            </section>
 
-    <!--RATIO EXPLANATION-->
-    <h1>Ratio Explanation</h1>
-    <section>
-        <h2 id="gross_profit_margin">Gross Profit Margin</h2>
-            <p>
-                Gross profit margin = <a href="#gross_profit" >gross profit</a> /<a href="#revenue">revenue</a> *100
-            </p>
-
-        <h2 id="net_margin">Net Margin</h2>
-            <p>
-                net margin = <a href="#net_earnings" >net earnings</a>/<a href="#revenue">revenue</a> *100
-            </p>
-
-        <h2 id="roe">ROE Return on Shareholders' Equity</h2>
-            <p>
-                Net Earnings divided by Shareholders' Equity equals Return on Shareholders' Equity.<br>
-                High returns on equity mean that the company is making good use of the earnings that it is retaining.
-            </p>
+            <section>
+                <h2>Cash dividends paid and share buybacks</h2>
+                <p>
+                    Issuance (Retirement) of Stock, Net = share buybacks<br>
+                    When a company payes dividends to the shareholder. The shareholder must pay income tax on the dividends.<br>
+                    It is more intresting for the company to buy back shares.
+                </p>
     </section>
 
-        <p>
-            augmentend payout ratio (cash dividends paid + issuance of stock / by net income)
-        </p>
 
+        <!--RATIO EXPLANATION-->
+        <h1>Ratio Explanation</h1>
+        <section>
+            <!--INCOME STATEMENT-->
+            <h2 id="gross_profit_margin">Gross Profit Margin</h2>
+                <p>
+                    Gross profit margin = <a href="#gross_profit" >gross profit</a> /<a href="#revenue">revenue</a> *100
+                </p>
 
-    
-    
+            <h2 id="net_margin">Net Margin</h2>
+                <p>
+                    net margin = <a href="#net_earnings" >net earnings</a>/<a href="#revenue">revenue</a> *100
+                </p>
 
-    
-</body>
+            <h2 id="per_share_earnings">Per Share Earnings</h2>
+                <p>
+                    Per-share earnings are the net earnings of the company on a per-share basis for the time period in question.<br>
+                    Net Income/number of shares outstanding<br>
+                    As an example: If a company had net earnings of $10 million for the year, and it has one million shares outstanding, 
+                    it would have per-share earnings for the year of $10 a share.
+                </p>
+
+            <h2 id="roe">ROE Return on Shareholders' Equity</h2>
+                <p>
+                    Net Earnings divided by Shareholders' Equity equals Return on Shareholders' Equity.<br>
+                    High returns on equity mean that the company is making good use of the earnings that it is retaining.
+                </p>
+        </section>
+
+            <p>
+                augmentend payout ratio (cash dividends paid + issuance of stock / by net income)
+            </p>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>

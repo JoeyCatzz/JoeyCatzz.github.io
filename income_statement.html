@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Income Statement</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <!--HEADER-->
+            <header>
+                <h1>Income Statement</h1>
+                <p>
+                    Income statements tell the investor the result of the company's operations for a set period of time.<br>
+                    An income statement has 3 components: First, there is the revenu of the business. Then there is the firm's expenses
+                    which are subtracted from the revenue and tell us wheter the company earned a profit or had a loss.<br>
+                </p>
+            </header>
 
-    <!--HEADER-->
-    <header>
-        <h1>Income Statement</h1>
-        <p>
-            Income statements tell the investor the result of the company's operations for a set period of time.<br>
-            An income statement has 3 components: First, there is the revenu of the business. Then there is the firm's expenses
-            which are subtracted from the revenue and tell us wheter the company earned a profit or had a loss.<br>
-        </p>
-    </header>
+            <!--INCOME STATEMENT-->
+            <section>
+                <p>
+                    <b><a href="explanation.html#revenue">Revenue</a></b><br>
+                    - <a href="explanation.html#cost_of_goods_sold">Cost of Goods Sold</a><br>
+                    <b>= <a href="explanation.html#gross_profit">Gross Profit</a></b><br>
 
-    <!--INCOME STATEMENT-->
-    <section>
-        <p>
-            <b><a href="explanation.html#revenue">Revenue</a></b><br>
-            - <a href="explanation.html#cost_of_goods_sold">Cost of Goods Sold</a><br>
-            <b>= <a href="explanation.html#gross_profit">Gross Profit</a></b><br>
-
-            <br>Operating Expenses<br>
-            - Selling, General & Admin.<br>
-            - Research & Development<br>
-            - Depreciation<br>
-            <b>= Operating Profit</b><br>
-            
-            <br>- Interest Expense<br>
-            + (-) Gain (Loss) Sale Assets<br>
-            - Other<br>
-            <b>= Income Before Tax</b><br>
-            
-            <br>- Income Taxes Paid<br>
-            <b>= <a href="explanation.html#net_earnings">Net Earnings</a></b><br>
-        </p>
-    </section>
-
-</body>
+                    <br><a href="explanation.html#operating_expenses">Operating Expenses</a><br>
+                    - <a href="explanation.html#selling_general_admin">Selling, General & Admin.</a><br>
+                    - <a href="explanation.html#research_and_development">Research & Development</a><br>
+                    - <a href="explanation.html#depreciation">Depreciation</a><br>
+                    <b>= <a href="explanation.html#operating_profit">Operating Profit</a></b><br>
+                    
+                    <br>- <a href="explanation.html#interest_expense">Interest Expense</a><br>
+                    + <a href="explanation.html#sales_of_assets_other">(-) Gain (Loss) Sale Assets</a><br>
+                    + (-) <a href="explanation.html#sales_of_assets_other">Other</a><br>
+                    <b>= <a href="explanation.html#income_before_tax">Income Before Taxes</a></b><br>
+                    
+                    <br>- <a href="explanation.html#income_tax_paid">Income Taxes Paid</a><br>
+                    <b>= <a href="explanation.html#net_earnings">Net Earnings</a></b><br>
+                </p>
+            </section>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>
